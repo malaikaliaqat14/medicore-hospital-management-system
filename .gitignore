@@ -1,0 +1,76 @@
+# ==========================================
+# MediCore Clinical Enterprise - .gitignore
+# ==========================================
+
+# Virtual Environments
+venv/
+env/
+.venv/
+ENV/
+medicore/venv/
+
+# Environment variables & secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+medicore/.env
+medicore/.env.*
+!medicore/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+medicore/staticfiles/
+media/
+medicore/media/*
+!medicore/media/.gitkeep
+
+# Node & Frontend
+node_modules/
+medicore/frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+medicore/frontend/dist/
+dist/
+dist-ssr/
+*.local
+
+# Binaries & Tunnels
+cloudflared.exe
+*.exe
+
+# IDE & OS Files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

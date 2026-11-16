@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#6df5e1","on-surface-variant":"#3e4947","tertiary":"#004eaa","on-error":"#ffffff","on-tertiary-container":"#e4eaff","surface-variant":"#dae2fd","surface-bright":"#faf8ff","tertiary-container":"#0165d8","on-secondary-fixed":"#00201c","surface-container-lowest":"#ffffff","on-primary-fixed":"#00201d","on-tertiary":"#ffffff","on-primary-container":"#a3faef","on-secondary-container":"#006f64","primary-fixed":"#9cf2e8","tertiary-fixed":"#d8e2ff","on-surface":"#131b2e","on-primary-fixed-variant":"#00504a","surface-container-highest":"#dae2fd","surface-container-high":"#e2e7ff","surface-container":"#eaedff","surface":"#faf8ff","secondary-fixed-dim":"#4fdbc8","error-container":"#ffdad6","error":"#ba1a1a","outline-variant":"#bdc9c6","secondary-fixed":"#71f8e4","surface-tint":"#006a63","primary-fixed-dim":"#80d5cb","primary":"#005c55","inverse-surface":"#283044","on-secondary-fixed-variant":"#005048","background":"#faf8ff","secondary":"#006b5f","on-tertiary-fixed":"#001a42","tertiary-fixed-dim":"#adc6ff","surface-dim":"#d2d9f4","surface-container-low":"#f2f3ff","outline":"#6e7977","inverse-on-surface":"#eef0ff","inverse-primary":"#80d5cb","on-primary":"#ffffff","primary-container":"#0f766e","on-error-container":"#93000a","on-background":"#131b2e","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#004395"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-mobile":"1rem",margin:"1.5rem","space-md":"1rem","gutter-desktop":"1.5rem","space-sm":"0.5rem",gutter:"1.25rem","margin-desktop":"2rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","space-xl":"2rem"},fontFamily:{"headline-lg":["Inter"],"label-lg":["Inter"],"display-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"telemetry-vital":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg-mobile":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"]},fontSize:{"headline-lg":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-xl":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"telemetry-vital":["24px",{lineHeight:"28px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.005em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-xl-mobile":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex items-center gap-space-sm"><img alt="Medicore Clinical Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VDVvfXvVz6tmxxoveOi-meA4_10RnVJq-RC5oQP8lgiqCADPieZsXfpDdH8_IRTg7lOKE2iP-7_Hc7rk1Zzx101FsjIgXI-Oe7E_VU9Aoz6Bh-wJWaxvjDE23gyJcVWkXWnMQviGK2TapXMuaIVJQWcJrk0u-mSt7gHKi0sK62acj-1vBsCoxxBneUeqEHLZYgsEby9OgAr4RONCEmdOLU5JqD7Fu03SFMxSyIxwM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Medicore OS</span><span class="font-label-sm text-label-sm text-on-surface-variant">Clinical Enterprise</span></div></div><div class="mx-space-md mb-space-md p-space-sm bg-surface-container-low rounded-lg"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary font-semibold">CAMPUS TENANT</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Multi-Tenant HQ</span></div><button class="mt-space-xs w-full flex items-center justify-between text-left group"><div class="truncate pr-space-xs"><p class="font-label-md text-label-md text-on-surface truncate group-hover:text-primary transition-colors">St. Jude Medical Center</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Metro Campus • Ward 4G</p></div><span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-lg">expand_more</span></button></div><div class="px-space-md pb-space-lg flex flex-col gap-space-md"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Main Care</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span>Overview / Dashboard</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="live-token-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">confirmation_number</span><span>Live Token Queue</span></div><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">18 Live</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="consultation-desk" href="#"><span class="material-symbols-outlined text-lg">stethoscope</span><span>Consultation Desk</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="appointments-and-rostering" href="#"><span class="material-symbols-outlined text-lg">calendar_clock</span><span>Appointments & Rostering</span></a></nav></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical Admin</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="patients-directory" href="#"><span class="material-symbols-outlined text-lg">group</span><span>Patients Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="doctor-directory" href="#"><span class="material-symbols-outlined text-lg">medical_services</span><span>Doctor Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="clinic-facilities" href="#"><span class="material-symbols-outlined text-lg">local_hospital</span><span>Clinic Facilities</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="billing-and-invoices" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span>Billing & Invoices</span></a></nav></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Super Admin & Network</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm" data-path="multi-tenant-clinics" href="#"><span class="material-symbols-outlined text-lg">domain</span><span>Multi-tenant Clinics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="platform-analytics" href="#"><span class="material-symbols-outlined text-lg">analytics</span><span>Platform Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="system-settings" href="#"><span class="material-symbols-outlined text-lg">tune</span><span>System Settings</span></a></nav></div></div></div><div class="p-space-md bg-surface-container-low border-t-0"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span>EHR v4.8.2-HighCare</span><span class="flex items-center gap-1 text-primary"><span class="w-2 h-2 rounded-full bg-secondary"></span>Synched</span></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-full h-10 pl-9 pr-14 bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.03)] focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search patients by UHID, Token #, doctor, phone, or appointment..." type="text"/><kbd class="absolute right-3 top-2.5 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 bg-error-container text-on-error-container rounded-full animate-pulse"><span class="material-symbols-outlined text-base text-error">emergency</span><span class="font-label-sm text-label-sm text-error font-semibold">CODE BLUE: ICU Wing 2-B</span></div><div class="flex items-center gap-space-xs px-2.5 py-1 bg-surface-container-low rounded-full"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">On Duty</span></div><button aria-label="Emergency Notifications" class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><button aria-label="Toggle Theme" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">light_mode</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwZTVpfUmfb52WVEtgZmCvbWITnd2GnCSW38U0ayjbHlgOhSh31KKQ_MWkkmR0KMJ__JkSVgaAfnhn1uKRp0grdQVbd7OAnApqsoda8RuHmgJpU8pg8b8iJSPXlhRQsp75KvnQoaR4RIt8cI6DkLiF9mRzyysxNMlqKvsZ6JuCubgB0-RhJ2KnYJMfRnbhD63g2G7gXvqUpHR9zaOSxr9qrsRXV17xyEYem3bTRxk"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface">Dr. Sarah Jenkins, MD</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Cardiologist</span></div><span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span></div></div></header><main class="w-full pt-16 px-space-lg py-space-lg flex-1 bg-background"><div class="flex flex-col w-full gap-space-lg">
+<!-- Network Header & Tenant Meta -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Network Administration</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary font-semibold">Multi-Tenant Clinics</span>
+<span class="ml-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Mesh Tier-0</span>
+</div>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Enterprise Clinic Network</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>48 Connected Nodes</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Federated control plane across clinical branches, regional nodes, and institutional credentials.</p>
+</div>
+<!-- Right Control Switcher -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-sm">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">hub</span>
+          All Regions (US-East / Central)
+        </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span>HIPAA / SOC2 Audited</span>
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-base">file_download</span>
+        Export Census
+      </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-base">domain_add</span>
+        Provision Tenant
+      </button>
+</div>
+</section>
+<!-- KPI Summaries (4 Grid Bento-style) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1: Affiliated Clinics -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Affiliated Clinics</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">domain</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">48</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Clinics</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-xs">arrow_upward</span> +3 this month
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">100% SLA</span>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-8xl">domain</span>
+</div>
+</div>
+<!-- KPI 2: Active Practitioners -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Medical Practitioners</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">stethoscope</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">1,240</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Active</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="text-on-surface-variant">912 Specialists • 328 Fellows</span>
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-xs">trending_up</span> 99.4% Valid
+        </span>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-8xl">stethoscope</span>
+</div>
+</div>
+<!-- KPI 3: Total Enrolled Patients -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Enrolled Patients</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary-container group-hover:bg-tertiary-container group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-xl">groups</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">382,910</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Profiles</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="text-on-surface-variant">Across 6 Enterprise DBs</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">sync</span> Auto-Sync
+        </span>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-8xl">groups</span>
+</div>
+</div>
+<!-- KPI 4: Monthly Billing & Revenue -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Net Platform Billing</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">payments</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">$4.28M</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ mo</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-xs">arrow_upward</span> +14.2% YoY
+        </span>
+<span class="text-on-surface-variant">Next cycle: Nov 1</span>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-8xl">payments</span>
+</div>
+</div>
+</section>
+<!-- Network Visualization & Status Distribution Bar -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/50 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">sensors</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Federated Node Health & Throughput</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time HL7/FHIR micro-mesh telemetry latency average: 18ms across 48 hospital partitions.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 w-full lg:w-auto justify-end">
+<!-- Mini Sparkline SVG -->
+<div class="hidden sm:flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mesh Load</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">14,290 req/s</span>
+</div>
+<svg class="w-36 h-6 text-primary" fill="none" viewbox="0 0 144 24">
+<path d="M0 16L18 12L36 15L54 8L72 13L90 5L108 11L126 7L144 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="h-8 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">44 Healthy</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">3 Auditing</span>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">1 Warning</span>
+</div>
+</div>
+</section>
+<!-- Action Toolbar & Filters -->
+<section class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- Search Bar -->
+<div class="relative flex-1 max-w-lg">
+<span class="material-symbols-outlined absolute left-3.5 top-3 text-on-surface-variant text-lg pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20" id="clinicSearchInput" placeholder="Filter clinics by name, license number, state, or admin..." type="text"/>
+</div>
+<!-- Filter Pills & Onboard CTA -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-sm">
+<button class="filter-pill active px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs">
+          All (48)
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium">
+          Active (44)
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium">
+          Review (3)
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium">
+          Suspended (1)
+        </button>
+</div>
+<button class="flex items-center gap-2 px-4 py-2.5 bg-primary-container text-on-primary font-label-md text-label-md rounded-xl shadow-sm hover:opacity-95 transition-opacity" id="openOnboardModalBtn">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Onboard New Clinic</span>
+</button>
+</div>
+</section>
+<!-- Clinic Directory Data Grid -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md font-semibold">Clinic & Tenant ID</th>
+<th class="py-3.5 px-space-md font-semibold">Location / Address</th>
+<th class="py-3.5 px-space-md font-semibold">Primary Admin</th>
+<th class="py-3.5 px-space-md font-semibold text-center">Practitioners</th>
+<th class="py-3.5 px-space-md font-semibold text-center">Patients</th>
+<th class="py-3.5 px-space-md font-semibold">Status</th>
+<th class="py-3.5 px-space-md font-semibold text-right">Monthly Rev</th>
+<th class="py-3.5 px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Metro City Hospital -->
+<tr class="clinic-row hover:bg-surface-container-low/40 transition-colors cursor-pointer group" onclick="toggleClinicDrawer('metro')">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-headline-sm font-bold shadow-xs">
+                  MC
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Metro City Hospital & Trauma Center</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono text-outline font-semibold">TID-8840-METRO</span>
+<span>•</span>
+<span class="text-secondary font-medium">Level 1 Trauma</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Downtown Hub</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate max-w-xs">400 E 34th St, Metro Core, NY</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Close-up clinical portrait of senior hospital administrator Dr. Raymond Vance wearing professional executive medical coat with clear clinical background in teal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFRnyzUhEJ3C3sibLiKjtejH0NC8G2wfy1zLIyt9VK0_PPyNesxrgHa7O5UNr9kLAipgQkmMNgEEY5i3nH_U5AS4N1frinFYZ_i4m7XAFP6UV1fy84p-zuB9jb65Hfo8NrExbzN5ZaHE5IRGckw-6syHHcphqb0gIju4eN6lc2LehhvDzV-AFM_ei-_k9p0_u4PUDghf3Mi7xnDqwWEf4HDx-xNfCIpw0J2DuZUck"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Dr. Raymond Vance</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Chief of Operations</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-medium font-mono text-primary">
+              142 Doctors
+            </td>
+<td class="py-4 px-space-md text-center font-medium font-mono">
+              45.2k Patients
+            </td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right font-headline-sm text-headline-sm font-semibold text-on-surface font-mono">
+              $380,000
+            </td>
+<td class="py-4 px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="toggleClinicDrawer('metro')" title="View Details">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Manage Licenses">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Audit Logs">
+<span class="material-symbols-outlined text-lg">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Hope Valley Pediatric -->
+<tr class="clinic-row hover:bg-surface-container-low/40 transition-colors cursor-pointer group" onclick="toggleClinicDrawer('hope')">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container font-headline-sm font-bold shadow-xs">
+                  HV
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Hope Valley Pediatric & Family Clinic</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono text-outline font-semibold">TID-1209-HOPE</span>
+<span>•</span>
+<span class="text-tertiary-container font-medium">Pediatric Spec</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">North Campus</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate max-w-xs">1200 Hope Way, Suite 400, Chicago, IL</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of pediatrician Dr Elena Rostova in sterile clinic corridor with friendly demeanor and modern stethoscope" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt0oFc7yvvU_x3OdVkWshyMoZQTrgfZ2s6Uh0KxT7ALV2-_JG8Lso4tTaEUaeQDnNFdXu0gHJvBydEKCND14j6SCSoczok99tZsxrOjjX2fpuhKVOKb94z5zbtNamaR_H34ftXwer3AtZP36LmXiqoNy4ScUG5PVgkefMMlluj1eSEDXNhFx9PlD8grF4KQLJOEupxTFwR3gl1Jg6pngKif9WAvlf7NzXg1OFml5g"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Dr. Elena Rostova</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Medical Director</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-medium font-mono text-primary">
+              28 Doctors
+            </td>
+<td class="py-4 px-space-md text-center font-medium font-mono">
+              12.8k Patients
+            </td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right font-headline-sm text-headline-sm font-semibold text-on-surface font-mono">
+              $94,000
+            </td>
+<td class="py-4 px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="toggleClinicDrawer('hope')" title="View Details">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Manage Licenses">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Audit Logs">
+<span class="material-symbols-outlined text-lg">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: St. Jude Heart & Vascular -->
+<tr class="clinic-row hover:bg-surface-container-low/40 transition-colors cursor-pointer group" onclick="toggleClinicDrawer('stjude')">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-headline-sm font-bold shadow-xs">
+                  SJ
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors truncate">St. Jude Heart & Vascular Institute</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono text-outline font-semibold">TID-5501-JUDE</span>
+<span>•</span>
+<span class="text-primary font-medium">Cardiology Hub</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">West Wing Pavilion</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate max-w-xs">88 Medical Plaza, Houston, TX</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of cardiologist administrator Dr Marcus Chen standing by cardiac monitor displays in crisp hospital attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbY241y1P-oQz-_C1rSOTte3qYQC70j5DTgibBA0YJW1pKprIKJdmIpVDvQ6ZSn_5kURyirrq1na8TFgOsSKiW3NLyzAMfpuAOkr4i6Kf9Yi1Ia39gYCBVnWSV_cqkKt_iVUy6RrWKKP4Za0GnCZksys6kVLCWfdW5DQWRvNdNo3mQvmEIfrENTBUFa3khbDWzRkNeHRaC80OtpSXXWwxLFN3Rt78M9roYstAxzhI"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Dr. Marcus Chen</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Head of Surgery</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-medium font-mono text-primary">
+              64 Doctors
+            </td>
+<td class="py-4 px-space-md text-center font-medium font-mono">
+              29.1k Patients
+            </td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 px-space-md text-right font-headline-sm text-headline-sm font-semibold text-on-surface font-mono">
+              $215,000
+            </td>
+<td class="py-4 px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="toggleClinicDrawer('stjude')" title="View Details">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Manage Licenses">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Audit Logs">
+<span class="material-symbols-outlined text-lg">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Crestview Urgent Care -->
+<tr class="clinic-row hover:bg-surface-container-low/40 transition-colors cursor-pointer group" onclick="toggleClinicDrawer('crestview')">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm font-bold shadow-xs">
+                  CU
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Crestview Urgent Care & Diagnostic Lab</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono text-outline font-semibold">TID-3391-CREST</span>
+<span>•</span>
+<span class="text-on-surface-variant font-medium">Walk-In & Lab</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">South Gate Outpost</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate max-w-xs">702 Crest Blvd, Austin, TX</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Headshot of head triage nurse Sarah Miller RN holding a tablet device in diagnostic lab environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpnc8fcDs6UXunZZW_ejYwvowe-7AbnKEI-ZkIjVeQYRW6p665-eTwe3My1JHeV2mKDQrn_pL8K0pONKVULWH2s847T6bPi5WK40UWE8P5LlU_mJfaV2bAJH-9UiQP_8ckh3oLBXRII3PZ4BGiKekS9Buou7loRSjQhKZtmwMZHUmFSGLwGOTdmHipVEhsBYiYUGXm2K5ul0v983CgJ9vQ94_ZgL2kEtCunuyvVnI"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Sarah Miller, RN</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Clinic Supervisor</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-medium font-mono text-primary">
+              18 Doctors
+            </td>
+<td class="py-4 px-space-md text-center font-medium font-mono">
+              8.4k Patients
+            </td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                Review Pending
+              </span>
+</td>
+<td class="py-4 px-space-md text-right font-headline-sm text-headline-sm font-semibold text-on-surface font-mono">
+              $52,000
+            </td>
+<td class="py-4 px-space-md text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="toggleClinicDrawer('crestview')" title="View Details">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Manage Licenses">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Audit Logs">
+<span class="material-symbols-outlined text-lg">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md bg-surface-container-low/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 1 to 4 of 48 registered clinic entities</span>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">1</button>
+<button class="px-3 py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm">2</button>
+<button class="px-3 py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm">3</button>
+<span class="px-2 text-on-surface-variant font-label-sm text-label-sm">...</span>
+<button class="px-3 py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm">12</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Slide-out Clinic Detail Drawer (Interactive Preview) -->
+<aside class="fixed right-0 top-0 bottom-0 w-full max-w-2xl bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" id="clinicDetailDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">TENANT NODE</span>
+<span class="font-mono text-outline font-label-sm text-label-sm">TID-8840-METRO</span>
+</div>
+<button class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" onclick="toggleClinicDrawer(null)">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold" id="drawerClinicTitle">Metro City Hospital & Trauma Center</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="drawerClinicSubtitle">Downtown Hub • Regional Academic Medical Anchor • 45.2k Active EHR Records</p>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Operational
+          </span>
+</div>
+</div>
+<!-- Drawer Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pt-2 scrollbar-none">
+<button class="drawer-tab-btn active px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-xs whitespace-nowrap" id="tab-doctors" onclick="switchDrawerTab('doctors')">
+          Doctors (142)
+        </button>
+<button class="drawer-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium whitespace-nowrap" id="tab-patients" onclick="switchDrawerTab('patients')">
+          Patients (45.2k)
+        </button>
+<button class="drawer-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium whitespace-nowrap" id="tab-admins" onclick="switchDrawerTab('admins')">
+          Clinic Admins (6)
+        </button>
+<button class="drawer-tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium whitespace-nowrap" id="tab-billing" onclick="switchDrawerTab('billing')">
+          Tenant Billing & SLA
+        </button>
+</div>
+</div>
+<!-- Drawer Content Area -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg">
+<!-- Doctor Drill-down View -->
+<div class="flex flex-col gap-space-md" id="drawerTabContent-doctors">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Assigned Medical Staff</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active practitioners accredited under this facility partition.</p>
+</div>
+<button class="px-3 py-1.5 bg-surface-container-low text-primary font-label-sm text-label-sm rounded-lg hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">person_add</span>
+            Assign Doctor
+          </button>
+</div>
+<!-- Practitioner Cards -->
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of Dr Marcus Ward senior trauma surgeon in scrub uniform with focused medical expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYFnX4ltwGpotVldGz19ZOZOdNmxflYrH5VEdRUsJw_377QxawrE6CMyVITSQwiVRE8gRL1QIA7n_zy09s7u6V6s1qv3vuHC648lHITv5jkacCRMhXjrteA9DkWVZ2pZ2a_Fm-WPMYdPds-W-cHC5pYLLkabJj3QLrylXok5GRMUR20RqsTP4j3REIWDH0dc9nReyk3iSl78KTxytAcGyrK1IVT1h5trk7HzGYpEU"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dr. Marcus Ward, MD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trauma Surgery • Lic #NY-44821</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-mono font-bold">1,840 pts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Enrolled</span>
+</div>
+<div class="px-2 py-1 bg-secondary-container/60 text-on-secondary-container rounded-lg font-label-sm text-label-sm font-semibold">
+                99.8% Comp
+              </div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Female neurologist Dr Aris Thorne standing in clinical imaging room wearing navy medical uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZSe6FGsEZxiXLe5O_IFaB7KfGIbcARFVSZAbMXVFoxIHigNzF_yX0mHGA3t8d_3FJTwYSe2pnpzFY6lzhLb8LPQissTBBlpBCtlHr8vo9hEDF638tj6YEbJ_Zqyy5Itue3bfEtcGenHB1p3QCnJWVD_SH12GgcNEeEMeEgYsXnu8J3mGrUZ3ZM6lMjwU1xVMybL4XKT9us-TpxIjkPgK6OJlpC0evwc0HEESxqBA"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dr. Aris Thorne, DO</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Neurology • Lic #NY-88910</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-mono font-bold">920 pts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Enrolled</span>
+</div>
+<div class="px-2 py-1 bg-secondary-container/60 text-on-secondary-container rounded-lg font-label-sm text-label-sm font-semibold">
+                100% Comp
+              </div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of Dr Kenneth Cole orthopedic surgeon with digital tablet in clinical hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtnEO0PgHhdfZil_Z1Es8_79pK2jsQjPG5TYiGYb5ieAYV1PZCNd5hzrzMVWmvk6_JyXE4-E0FYWj2Y8kA3KsjDl4urHrGDYMhnOERBCTRGcLk2sGtnIcH6e6nXxY_UpritRjRFZnrEBUuaSSPHz0DeEOvWv7GasQM5wNJrOU4RjKvrhQWZQChoowWsM3geuTC6Cc0zd2iwCxRiCeWHruF0h01B_nPvbxxTCkogoM"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dr. Kenneth Cole, MD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Orthopedics • Lic #NY-11045</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-mono font-bold">1,410 pts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Enrolled</span>
+</div>
+<div class="px-2 py-1 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm font-semibold">
+                96.4% Comp
+              </div>
+</div>
+</div>
+</div>
+<!-- Telemetry & Load Breakdown -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Tenant Quota & Volume Capacity</span>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 72%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Allocated Seat Volume: 142 / 200 Doctors</span>
+<span class="font-bold text-primary">71% Utilized</span>
+</div>
+</div>
+</div>
+<!-- Other Tabs Fallback Content -->
+<div class="hidden flex-col gap-space-md" id="drawerTabContent-patients">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Patient Population Registry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">45,219 electronic health records stored across encrypted multi-tenant storage buckets.</p>
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface font-medium">EMR Schema Version</span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">FHIR R4.01</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium">Daily Active Admissions</span>
+<span class="font-label-sm text-label-sm font-mono text-on-surface font-bold">148 avg</span>
+</div>
+</div>
+</div>
+<div class="hidden flex-col gap-space-md" id="drawerTabContent-admins">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Clinic Administrators</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">6 platform operators hold localized tenant-root privileges.</p>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">admin_panel_settings</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Root Admin: Dr. Raymond Vance</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">MFA Active</span>
+</div>
+</div>
+<div class="hidden flex-col gap-space-md" id="drawerTabContent-billing">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tenant Billing & SLA Tier</h3>
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">Monthly Retainer</span>
+<span class="font-headline-sm text-headline-sm font-mono font-bold text-on-surface">$380,000 / mo</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">SLA Guarantee</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">99.999% High Availability</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">Auto-Payment Gateway</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Stripe Connect • Synced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<button class="px-4 py-2 bg-surface-container-lowest text-error font-label-md text-label-md rounded-lg shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors">
+        Suspend Clinic
+      </button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-colors" onclick="toggleClinicDrawer(null)">
+          Dismiss
+        </button>
+<button class="px-4 py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 transition-opacity">
+          Save Node Config
+        </button>
+</div>
+</div>
+</aside>
+<!-- Backdrop for Drawer / Modal -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-40 hidden transition-opacity" id="drawerBackdrop" onclick="toggleClinicDrawer(null)"></div>
+</div>
+<script>
+  function toggleClinicDrawer(clinicId) {
+    const drawer = document.getElementById('clinicDetailDrawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    if (!drawer) return;
+
+    if (clinicId) {
+      drawer.classList.remove('translate-x-full');
+      backdrop.classList.remove('hidden');
+      
+      const titles = {
+        'metro': { title: 'Metro City Hospital & Trauma Center', sub: 'Downtown Hub • Regional Academic Medical Anchor • 45.2k Active EHR Records' },
+        'hope': { title: 'Hope Valley Pediatric & Family Clinic', sub: 'North Campus • Pediatric & Adolescent Care • 12.8k Active Records' },
+        'stjude': { title: 'St. Jude Heart & Vascular Institute', sub: 'West Wing Pavilion • Advanced Cardiac Care • 29.1k Active Records' },
+        'crestview': { title: 'Crestview Urgent Care & Diagnostic Lab', sub: 'South Gate Outpost • Ambulatory Care & Point-of-Care Lab • 8.4k Records' }
+      };
+
+      if (titles[clinicId]) {
+        document.getElementById('drawerClinicTitle').textContent = titles[clinicId].title;
+        document.getElementById('drawerClinicSubtitle').textContent = titles[clinicId].sub;
+      }
+    } else {
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.add('hidden');
+    }
+  }
+
+  function switchDrawerTab(tabName) {
+    const tabKeys = ['doctors', 'patients', 'admins', 'billing'];
+    tabKeys.forEach(t => {
+      const btn = document.getElementById('tab-' + t);
+      const content = document.getElementById('drawerTabContent-' + t);
+      if (t === tabName) {
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-xs');
+        btn.classList.remove('text-on-surface-variant');
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+      } else {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-xs');
+        btn.classList.add('text-on-surface-variant');
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+      }
+    });
+  }
+
+  // Quick Client-Side Filter Demonstration
+  document.getElementById('clinicSearchInput')?.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase();
+    document.querySelectorAll('.clinic-row').forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(query) ? '' : 'none';
+    });
+  });
+
+  // Filter Pill micro-toggle
+  document.querySelectorAll('.filter-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+        p.classList.add('text-on-surface-variant');
+      });
+      this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      this.classList.remove('text-on-surface-variant');
+    });
+  });
+</script></main></div></body></html>
